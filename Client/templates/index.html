@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Diet Planner</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Diet Planner</h2>
+    <form action="{{ url_for('pred_diet') }}" method="post">
+        <labe >Gender </label><br>
+            <label for="gender" >male</label>
+            <input type="radio" id="gender" name="gender" value="1"/>
+            <label for="gender" >fmale</label>
+            <input type="radio" id="gender" name="gender" value="0">
+        <br>
+
+
+        <labe for="height">Height : </label>   
+            <input type="text" id="height" name="height" placeholder="Height in CM"/><br>
+
+
+        <labe for="weight">Weight : </label>
+            <input type="text" id"weight" name="Weight" placeholder="weight in LBs"/><br>
+
+        <labe for="age">Age : </label>
+            <input type="text" id="age" name="Age" placeholder="Enter Age"/><br>
+            
+
+
+        <labe for="Diabates">Diabates</label><br>
+            <label for="Diabates" >yes</label>
+            <input type="radio" id="yes" id="Diabates"  name="Diabates" value="1"/>
+            <label for="Diabates">No</label>
+            <input type="radio" id="no" id="Diabates" name="Diabates" value="0">
+        <br>
+
+        <input type="submit" value="Submit to see"/>
+    </form>
+<h4>SVM : {{output}}</h4>
+
+  </body>
+</html>
